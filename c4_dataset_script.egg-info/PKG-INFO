@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: c4-dataset-script
+Version: 0.0.0
+Home-page: https://github.com/shjwudp/c4-dataset-script
+Author: Jianbin Chang
+Author-email: shjwudp@gmail.com
+License: MIT
+Keywords: c4 datasets commoncrawl
+License-File: LICENSE
+Requires-Dist: pyspark>=3.0.0
+Requires-Dist: tensorflow-datasets==4.6.0
+Requires-Dist: tensorflow
+Requires-Dist: nltk
+Requires-Dist: langdetect
+Requires-Dist: apache_beam
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist

@@ -211,7 +211,7 @@ def remove_duplicate_text(pages, min_num_sentences=c4_utils._MIN_NUM_SENTENCES):
 
     # Output: url, text
     final_docs = pages.cogroup(lines_to_keep)\
-        .mapValues(lambda x: {"features": list(x)[0], "lines": list(list(x)[1])})\
+        .mapValues(lambda x: {"features": list(x[0])[0], "lines": list(x[1])})\
         .flatMap(lambda x: _remove_lines_from_text(list(x), counter_inc_fn=c4_utils.get_counter_inc_fn("dedupe-lines"), min_num_sentences=min_num_sentences))
 
     return final_docs
