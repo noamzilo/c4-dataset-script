@@ -1,6 +1,0 @@
-pyspark>=3.0.0
-tensorflow-datasets==4.6.0
-tensorflow
-nltk
-langdetect
-apache_beam
